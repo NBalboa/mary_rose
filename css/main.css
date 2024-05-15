@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+:root {
+    --gray: #808dad;
+    --black: #0e1630;
+    --orange: #eb4a4a;
+    --white: #ffffff;
+}
+
+.hidden {
+    display: none !important;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    background-color: var(--black);
+    scroll-behavior: smooth;
+}
+/* Nav Start */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 1rem 1.5rem; */
+    padding: 1rem 5rem;
+}
+
+nav .brand_name {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+nav .brand_initial {
+    color: var(--orange);
+    font-weight: 700;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav .nav_links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+nav .menu_items {
+    display: none;
+}
+
+nav .menu_item {
+    color: var(--white);
+}
+
+nav button {
+    display: none;
+}
+
+nav .nav_link {
+    color: var(--gray);
+    font-size: 1rem;
+    padding-bottom: 0.3rem;
+}
+
+nav .active {
+    color: var(--orange);
+    border-bottom: 2px solid var(--orange);
+}
+
+nav .nav_link:hover {
+    color: var(--orange);
+}
+/* Nav End */
+
+/* Hero Start*/
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    height: 100vh;
+    gap: 12px;
+}
+
+.hero_details p {
+    font-size: 2rem;
+    color: var(--orange);
+    font-weight: 300;
+}
+
+.hero_details h2 {
+    font-size: 4rem;
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero_details h3 {
+    font-size: 3rem;
+    color: var(--gray);
+    text-transform: uppercase;
+}
+
+.hero .wrapper {
+    max-width: 600px;
+}
+
+.hero .wrapper img {
+    width: 100%;
+    border-radius: 12px;
+    border: 4px solid var(--orange);
+}
+
+/* Hero End */
+
+/* Profile Start */
+
+#profile {
+    margin: 12px 24px;
+}
+
+.profile_details {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 24px;
+}
+
+#profile h2 {
+    color: var(--white);
+    font-size: 4rem;
+}
+
+#profile h3 {
+    color: var(--orange);
+    font-size: 2rem;
+}
+
+.personal p {
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.personal span {
+    color: var(--gray);
+}
+
+.personal p:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.hobbies ul {
+    list-style: none;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.hobbies ul li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+/* Profile End  */
+
+/* Education Start */
+
+#education {
+    margin: 0 24px;
+}
+
+#education .school:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+#education h2 {
+    color: var(--white);
+    font-size: 4rem;
+    margin-bottom: 12px;
+}
+
+#education .school_level {
+    color: var(--gray);
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+#education .school_name {
+    color: var(--orange);
+    font-size: 3rem;
+}
+
+#education .school p {
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+#education .school span {
+    color: var(--black);
+    font-size: 0.8rem;
+    background-color: var(--white);
+    padding: 4px 8px;
+    border-radius: 9999px;
+    vertical-align: middle;
+}
+/* Education End */
+
+/* Family Start */
+#family_bg {
+    margin: 24px 24px;
+}
+
+#family_bg h2 {
+    font-size: 4rem;
+    color: var(--white);
+    margin-bottom: 12px;
+}
+
+#family_bg .family_cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 20px;
+}
+
+#family_bg .family_card {
+    width: calc((100% / 3) - 20px);
+    margin-bottom: 12px;
+    border-radius: 14px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#family_bg .family_card-name {
+    color: var(--orange);
+    font-size: 1.5rem;
+}
+
+#family_bg .family_card-role {
+    color: var(--gray);
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+#family_bg .family_card-info {
+    color: var(--white);
+    font-size: 0.8;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#family_bg .family_wrapper {
+    width: 100%;
+    border-radius: 12px;
+    border: 2px solid var(--white);
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+#family_bg .family_wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+#family_bg .family_picture {
+    margin: 24px 0;
+}
+
+#family_bg .family_picture img {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 24px;
+    margin-bottom: 14px;
+    border: 2px solid var(--orange);
+}
+#family_bg .family_picture p {
+    color: var(--white);
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Family End */
+
+/* Footer Start */
+
+footer {
+    margin: 54px 24px;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+footer a:hover {
+    color: var(--gray);
+}
+
+footer div {
+    margin-top: 12px;
+    padding-top: 12px;
+    text-align: center;
+    color: var(--white);
+    border-top: 2px solid var(--orange);
+}
+
+/* Footer End */
+
+/* Tablet size */
+
+@media (max-width: 768px) {
+    nav {
+        padding: 1rem 3rem;
+    }
+    nav .brand_name {
+        font-size: 1.5rem;
+    }
+
+    nav .nav_links {
+        gap: 0.5rem;
+    }
+
+    nav .nav_link {
+        font-size: 0.9rem;
+    }
+
+    .hero_details p {
+        font-size: 1.5rem;
+    }
+
+    .hero_details h2 {
+        font-size: 2rem;
+        color: var(--white);
+    }
+
+    .hero_details h3 {
+        font-size: 2rem;
+    }
+
+    .hero .wrapper {
+        padding: 0;
+        max-width: 400px;
+    }
+
+    .profile_details {
+        margin: 0;
+        gap: 10px;
+    }
+
+    #profile h2 {
+        font-size: 2rem;
+    }
+    #profile h3 {
+        font-size: 1.5rem;
+        margin-bottom: 4px;
+    }
+    .personal p {
+        font-size: 1rem;
+    }
+    .hobbies ul {
+        font-size: 1rem;
+    }
+
+    #family_bg .family_card {
+        width: calc((100% / 2) - 20px);
+    }
+    #family_bg h2 {
+        font-size: 2rem;
+    }
+
+    #education h2 {
+        font-size: 2rem;
+    }
+
+    #education .school_level {
+        font-size: 1.8rem;
+    }
+
+    #education .school_name {
+        color: var(--orange);
+        font-size: 2rem;
+    }
+
+    #education .school p {
+        color: var(--white);
+        font-size: 1rem;
+    }
+
+    footer a {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile Size */
+
+@media (max-width: 576px) {
+    nav {
+        /* display: re; */
+        position: relative;
+    }
+    nav .nav_links {
+        display: none;
+    }
+    nav #menu_btn {
+        padding: 0.4rem 1rem;
+        border-radius: 8px;
+        background-color: var(--black);
+        border-color: var(--orange);
+        color: var(--orange);
+        border-width: 2px;
+        font-weight: 700;
+    }
+
+    nav #menu_btn:hover {
+        border-color: var(--white);
+        color: var(--white);
+    }
+    nav .menu_items {
+        display: block;
+        position: absolute;
+        top: 3.8rem;
+        left: 0;
+        width: 100%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        list-style: none;
+        /* background-color: red; */
+    }
+
+    nav .menu_item {
+        display: inline-block;
+        color: var(--gray);
+        margin-bottom: 1rem;
+        width: 100%;
+        /* border-bottom: 2px solid; */
+        padding-bottom: 3px;
+    }
+
+    nav .menu_item:hover {
+        color: var(--orange);
+    }
+
+    nav .active {
+        color: var(--orange);
+    }
+
+    nav button {
+        display: block;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #family_bg .family_card {
+        width: calc((100% / 1) - 20px);
+    }
+
+    footer a {
+        font-size: 0.8rem;
+    }
+}
